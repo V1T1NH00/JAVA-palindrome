@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Palindrome { 
+
+   public static void main(string[] args) {
+   
+    Scanner teclado = new Scanner(System.in);
+    System.out.println("Digite uma Palavra");
+    String texto=teclado.nextLine();
+    String contrario = "";
+    
+    for(int i =texto.length()-1; i>=0; i--) {
+      contrario+= texto.charAt(i);
+    }
+    if(texto.toLowerCase().equals(contrario.toLowerCase())){
+    
+    System.out.println("É Palindrome");
+    
+    }
+    
+    else
+    System.out.println("Não é Palindrome");
+    
+      }
+    }
